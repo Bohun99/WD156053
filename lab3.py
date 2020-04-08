@@ -37,3 +37,33 @@ a = input("Podaj a w funkcji y=ax+b")
 a = int(a)
 print (monotonicznosc(a))
 
+#Zadanie 5
+def spr(a1, a2):
+    if(a1 == a2):
+        print("Proste są równoległe")
+    elif (a1*a2 == -1):
+        print("Proste są prostopadłe")
+    else:
+        print("Nie są prostopadłe ani równoległe")
+
+a1 = input("Podaj a w 1 funkcji y=ax+b")
+a1 = int(a1)
+a2 = input("Podaj a w 2 funkcji y=ax+b")
+a2 = int(a2)
+print (spr(a1,a2))
+
+#Zadanie 6
+def promien(a=5, b=5, x=1, y=2):
+    r = ((x-a)*(x-a))+((y-b)*(y-b))
+    return r**(1/2)
+
+print(promien())
+
+#Zadanie 7
+def przeciw(a=6, b=2):
+    c = a**2 + b**2
+    return c**(1/2)
+
+print(przeciw())
+
+
