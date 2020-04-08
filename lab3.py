@@ -63,7 +63,13 @@ print(promien())
 def przeciw(a=6, b=2):
     c = a**2 + b**2
     return c**(1/2)
+a = float(przeciw())
+print("Przeciwprostokątna wynosi : " + str(a) )
 
-print(przeciw())
 
-
+#Zadanie 8
+def suma(a1=1, r=1, ile=10):
+    ostatni = a1+(ile-1)*r
+    return ((a1 + ostatni)/2)*ile
+a = float(suma())
+print("Suma podanego ciągu to: " + str(a) )
