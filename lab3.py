@@ -94,6 +94,35 @@ def ilosc(** produkt):
     
 ilosc(chleb = 1, ketchup = 3, tosty = 9)
 
+#Zadanie 11
+from liczby_zespolone import urojona_i_rzeczywista
+from liczby_zespolone import dodawanie_i_odejmowanie
+
+x = (3+10j)
+y = (1+2j)
+
+urojona_i_rzeczywista.urojona(x)
+urojona_i_rzeczywista.urojona(y)
+
+print(dodawanie_i_odejmowanie.dod(x, y))
+
+#liczby_zespolone/_init_.py
+all = ["dodawanie_i_odejmowanie", "urojona_i_rzeczywista"]
+
+#liczby_zespolone/dodawanie_i_odejmowanie.py
+def dod(x, y):
+    return x+y
+
+def odej(x, y):
+    return x-y
+
+#liczby_zespolone/urojona_i_rzeczywista.py
+def rzeczywista(x):
+    print(x.real)
+
+def urojona(x):
+    print(x.image)
+
 #Zadanie 12
 from ciagi import aryt
 from ciagi import geo
