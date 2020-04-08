@@ -108,12 +108,12 @@ q=1
 n2=3
 print(geo.angeo(a2, q, n2))
 
-#ciągi aryt
+#ciągi/aryt.py
 def anaryt(a1, r, n):
     an = a1 + (n-1)*r
     return an
 
-#ciągi geo
+#ciągi/geo.py
 def angeo(a1, q, n):
     an = a1*q**(n-1)
     return an
