@@ -73,3 +73,23 @@ def suma(a1=1, r=1, ile=10):
     return ((a1 + ostatni)/2)*ile
 a = float(suma())
 print("Suma podanego ciągu to: " + str(a) )
+
+#Zadanie 9
+def ciag(* liczby):
+    if len(liczby) == 0:
+        return 0
+    else:
+        ilo = 1
+        for x in liczby:
+            ilo = ilo*x
+    return ilo
+print(ciag(12,2,5,1))
+
+#Zadanie 10
+def ilosc(** produkt):
+    ilosc=0
+    for x in produkt:
+        ilosc = ilosc + produkt[x]
+    print(ilosc)
+    
+ilosc(chleb = 1, ketchup = 3, tosty = 9)
