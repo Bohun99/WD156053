@@ -65,8 +65,21 @@ print(b, "\n")
 
 print(np.add(a, b))
 
+#ZADANIE 8
 
+import numpy as np
+a = np.arange(9).reshape(3,3)
+print(a, "\n")
+for b in a:
+   print(b)
 
+#ZADANIE 9
+
+import numpy as np
+a = np.arange(9).reshape(3,3)
+print(a, "\n")
+for b in a.flat:
+   print(b)
 
 #ZADANIE 10
 
