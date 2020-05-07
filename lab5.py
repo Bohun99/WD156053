@@ -83,3 +83,22 @@ def parzyste(dane):
 napis = parzyste("Moro")
 print(next(napis))
 print(next(napis))
+
+#ZADANIE 12
+
+def nazwy_miesiecy():
+    for x in ["styczen", "luty", "marzec", "kwiecien", "maj", "czerwiec", "lipiec", "sierpien", "wrzesien", "pazdziernik", "listopad", "grudzien"]:
+        yield x
+m = nazwy_miesiecy()
+print(m.__next__())
+print(m.__next__())
+print(m.__next__())
+print(m.__next__())
+print(m.__next__())
+print(m.__next__())
+print(m.__next__())
+print(m.__next__())
+print(m.__next__())
+print(m.__next__())
+print(m.__next__())
+print(m.__next__())
