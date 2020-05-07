@@ -84,6 +84,25 @@ napis = parzyste("Moro")
 print(next(napis))
 print(next(napis))
 
+#ZADANIE 11
+
+def cfib(liczba):
+    a0 = 1
+    a1 = 5
+    i = 0
+    while i < liczba:
+        a2 = a0 + a1 
+        a0 = a1
+        a1 = a2
+        yield a2
+f = cfib(3)
+print(f.__next__())
+print(f.__next__())
+print(f.__next__())
+print(f.__next__())
+print(f.__next__())
+
+
 #ZADANIE 12
 
 def nazwy_miesiecy():
